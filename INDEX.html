@@ -1,0 +1,2368 @@
+
+<html> 
+<head>
+<title>ΑΡΧΙΚΗ</title>
+<meta charset="utf-8"/>
+
+ <link rel="stylesheet" href="css/hab.css">
+
+ <!--
+ <script
+src="https://code.jquery.com/jquery-3.2.1.js">
+</script>   η μπορώ να αφίσω το ακριβώς απο κάτω το οποίο δεν παίρνει απο server αλλά απο το αρχειο του στο js/hamburger
+ -->
+ 
+<script type="text/javascript" src="js/hamburger.js"> </script>
+
+
+<script type="text/javascript"  src="script/clock.js ">   </script>
+<script type="text/javascript" src="script/jquery.js"> </script>
+
+<script type="text/javascript" src="script/cycle.js"> </script>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+$('.slideshow').cycle({
+     fx: 'fadeZoom', //zoom,fadeZoom,shuffle,fade,turnDown,curtainX
+	 
+      next: '#next' ,
+    
+	prev: '#prev' ,
+ //sync:false,	
+delay:-2000 
+
+	   });
+}); 
+
+</script>
+
+
+
+
+
+
+
+
+<style>
+#main{
+//border:1px solid white;
+margin:0 auto;
+width:960px;
+
+background-attachment:fixed;
+background:#396F8B;
+}
+
+
+body{
+//border:1px solid white;
+//margin:0 auto;
+//width:960px;
+
+background-attachment:fixed;
+background:#396F8B;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header{
+background-image:url('images/ok2.jpg');
+overflow:hidden;
+height:130px;
+//border:1px solid white;
+
+}
+
+#ok{
+
+
+
+
+margin:3px 90px;
+
+padding:0;
+float:left;
+}
+
+#ok a:hover img{
+opacity:0.7;
+
+//transform:rotate(-2deg);
+                               //transition-delay:2s;
+}
+
+
+#fb{
+
+float:left;
+margin:10px 100px;
+margin-right:0;
+}
+
+#fb :hover img{
+opacity:0.6;
+
+}
+
+#you{
+margin:10px 20px;
+float:left;
+padding:0;
+
+}
+
+#you :hover img{
+opacity:0.6;
+
+}
+
+
+.nav{
+	width: 960px;
+	height: 47px;
+	margin: 0 auto;
+	border-radius: 5px;
+	background:grey;
+	
+}
+
+
+
+.nav ul li{
+
+ 
+	list-style: none;
+	width: 192px;
+	line-height: 47px;
+	position: relative;
+	background:grey;
+	box-shadow: 0px 2px 2px 0px black;
+	text-align: center;
+	float: left;
+	//background: linear-gradient(grey 20%,black 80%);
+}
+.nav ul li ul{
+
+	position: absolute;
+}
+
+.nav ul li a{
+	color: #fff;
+	width: 190px;
+	height: 45px;
+	display: inline-block;
+	text-decoration: none;
+	background: linear-gradient(grey 20%,black 80%);
+}
+.nav ul li a:hover{
+	font-weight: bold;
+	border-bottom: 2px solid yellow;
+	color:orange;
+	background:#184656;
+
+}
+.nav ul li ul{
+	display: none;
+	opacity:0.8; // to deutero upomenou einai diafanes
+}
+.nav ul li:hover ul{
+	display: block;
+}
+
+
+
+#menou{
+//background-image:url('./2.jpg');
+background-attachment:fixed;
+background-image:url('images/sky1.jpg');
+border:1px solid white;
+}
+
+
+
+
+#tag{
+
+//background:#184656;
+width:960px;
+overflow:hidden;
+padding: 0;
+margin-bottom:0;
+border-bottom:3px solid white;
+margin:0;
+}
+
+
+#tag #pok{
+
+//border:1px solid yellow;
+overflow:hidden;
+width:320px;
+float:left;
+margin:0 20px;
+padding:0;
+color:#ccc;
+}
+
+
+
+#tag p{
+/border:1px solid red;
+float:left;
+font-size:19px;
+margin:15 0px;
+
+}
+
+
+
+ #tag ul{
+	 /border:1px solid red;
+	 //position:absolute;
+	 //top:50%;
+	 //left:50%;
+	 //transform:translate(-50%,-50%);
+	margin:16 5px;
+	padding:0;
+	 display:flex;
+	 width:160px;
+  float:left;
+	 }
+	 
+	#tag ul li{
+	 
+	 list-style:none;
+	 color:#484848;
+	 font-family:arial;
+	 font-size: 17px ;
+
+	 letter-spacing:3px;
+	
+	 animation:animate 1.8s linear infinite;
+	 
+	 
+	 }
+	 
+	 @keyframes animate{
+	 
+	 0%{
+	 color:#484848;
+	 text-shadow:none;
+	 
+	 }
+	 
+	  18%{
+	 color:#484848;
+	 text-shadow:none;
+	 
+	 }
+	 
+	  20%{
+	 color:#fff900;
+	 text-shadow:0 0 10px #fff900 0 0 40px #ff6c00;
+	 
+	}
+	 
+	 
+	 
+	 
+	 }
+	 
+	
+	 
+	
+	
+	 
+	#tag ul li:nth-child(3)
+	 {
+	
+	 margin-left: 5px;
+	 }
+
+#clock{
+width:560px;
+
+float:left;
+margin:15px 0;
+text-align:right;
+font-size:18px;
+padding-bottom:0;
+color:#ccc;
+}
+
+
+#upomenu1{
+padding-top:40px;
+background-image:url('images/sky1.jpg');
+border-bottom:3px solid white;
+background-attachment:fixed;
+background-repeat: no-repeat;
+
+}
+
+
+.slideshow{
+ height:410px;
+ width:730px;
+ margin:0px auto;
+border:3px solid grey;
+background:grey;
+
+
+
+
+}
+
+.slideshow img {
+
+
+
+}
+
+#words{
+
+padding:8px 0px;
+margin:0px 420px;
+//width:960px;
+
+}
+
+
+
+#words #prev:hover{
+
+opacity:0.5;
+
+
+}
+
+#words #next:hover{
+
+opacity:0.5;
+
+
+}
+
+#upomenu2{
+overflow:hidden;
+//background:white;
+padding:10px 0;
+
+
+
+}
+
+
+
+
+
+#upomenu2a{
+border-radius:10px 10px;
+//background:#396F8B;
+width:190px;
+border:1px solid black;
+padding:10px 0;
+float:left;
+margin:30px 5px;
+background-image:url('images/sky5.jpg');
+}
+
+
+.upo2ab{
+overflow:hidden;
+width:960px;
+//border:1px solid orange;
+
+
+
+}
+
+#upomenu2a p{
+background:#ccc;
+width:180px;
+text-align:center;
+border-radius:10px 10px;
+margin:0px 5px;
+font-size:20px;
+
+}
+
+
+#upomenu2a ul{
+list-style:circle;
+
+margin:0 ;
+width:190px;
+padding:0;
+
+}
+
+
+#upomenu2a ul li{
+
+color:white;
+margin:6px 25px;
+width:190px;
+padding:0;
+font-size:18px;
+}
+
+#upomenu2a ul li a{
+text-decoration:none;
+color:#ccc;
+
+}
+
+#upomenu2a ul li a:hover{
+text-decoration:underline;
+color:#C9D322; //color:#188BC0;
+
+}
+
+#upomenu2b{
+margin:0px 20px;
+padding:0px 0;
+border:1px solid black;
+overflow:hidden;
+float:left;
+width:690px;
+//background:#396F8B;
+border-radius:10px 10px;
+background-image:url('images/sky5.jpg');
+}
+
+
+#upomenu2b #prosfores {
+background:#ccc;
+padding:10px 0;
+margin:10px 250px;
+width:190px;
+text-decoration:underline;
+text-align:center;
+border-radius:10px 10px;
+}
+
+
+#foto{
+border:1px solid black;
+width:150px;
+float:left;
+margin:0px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto img{
+
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto p{
+text-align:center;
+margin:10px 0;
+width:150px;
+
+
+}
+
+
+
+
+
+#foto1{
+border:1px solid black;
+width:150px;
+float:left;
+margin:0px 10px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto1 img{
+
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto1 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+
+
+}
+
+
+#foto2{
+border:1px solid black;
+width:150px;
+float:left;
+margin:0px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto2 img{
+
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto2 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+
+
+}
+
+#foto3{
+
+width:150px;
+float:left;
+margin:0px 10px;
+background:#ccc;
+border-radius:6px 6px;
+padding:0;
+border:1px solid black;
+
+}
+
+#foto3 img{
+padding:0;
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto3 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+padding:0;
+
+}
+
+
+#foto4{
+border:1px solid black;
+width:150px;
+float:left;
+margin:20px 10px;
+background:#ccc;
+border-radius:6px 6px;
+padding:0;
+
+}
+
+#foto4 img{
+padding:0;
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto4 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+padding:0;
+
+}
+
+#foto5{
+border:1px solid black;
+width:150px;
+float:left;
+margin:20px 10px;
+background:#ccc;
+border-radius:6px 6px;
+padding:0;
+
+}
+
+#foto5 img{
+padding:0;
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto5 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+padding:0;
+
+}
+
+
+#foto6{
+border:1px solid black;
+width:150px;
+float:left;
+margin:20px 10px;
+background:#ccc;
+border-radius:6px 6px;
+padding:0;
+
+}
+
+#foto6 img{
+padding:0;
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto6 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+padding:0;
+
+}
+
+#foto7{
+border:1px solid black;
+width:150px;
+float:left;
+margin:20px 10px;
+background:#ccc;
+border-radius:6px 6px;
+padding:0;
+
+}
+
+#foto7 img{
+padding:0;
+border-radius:5px 5px;
+margin:4px 15px;
+}
+
+
+#foto7 p{
+text-align:center;
+margin:10px 0;
+width:150px;
+padding:0;
+
+}
+
+#upomenu2b b{
+color:red;
+
+}
+
+
+#clear2{
+clear:both;
+
+}
+
+
+#upomenu2c{
+background-image:url('images/sky5.jpg');
+border:1px solid black;
+font-size:18px;
+margin:30px 30px;
+font-family:arial;
+width:900px;
+border-radius:10px 10px;
+//background:#396F8B;
+
+}
+
+
+#upomenu2c p{
+
+color:#ccc;
+margin:20px 20px;
+
+}
+
+#upomenu2c b{
+
+color:#F8CC00;
+}
+
+
+
+
+
+
+.clear2{
+clear:both;
+}
+
+footer{
+width:960px;
+
+background:#191818;
+height:80px;
+//border:1px solid white;
+margin:0px;
+
+}
+
+footer p{
+margin:10px 0px;
+position:relative;
+top:35px;
+width:960px;
+text-decoration:underline;
+text-align:center;
+font-size:18px;
+color:yellow;
+}
+
+
+
+@media screen and (max-width:700px){
+
+  header{
+//background-image:url('images/ok2.jpg');
+
+height:110px;
+
+width:100%;
+
+
+}
+
+
+
+
+#ok{
+//background-image:url('images/ok.png');
+margin:0 100px;
+width:100%;
+}
+
+
+
+#ok a img{
+float:left;
+width:30%;
+margin:0;
+padding:0;
+position:absolute;
+}
+
+#ok a:hover img{
+opacity:0.7;
+
+}
+
+
+#fb{
+
+float:left;
+
+position:absolute;
+left:290px;
+
+width:60%;
+}
+
+#fb  img{
+position:absolute;
+float:left;
+height:30px;
+
+width:10%;
+}
+
+
+
+
+
+
+#fb :hover img{
+opacity:0.6;
+
+}
+  
+
+ #you{
+margin:10px 0px;
+float:left;
+padding:0;
+width:60%;
+position:absolute;
+left:440px;
+}
+
+#you img{
+height:30px;
+width:10%;
+position:absolute;
+}
+
+ 
+.nav{
+		display: none;
+		width: 67%;
+		height: 225px;
+		margin:0 auto ;
+		//position:absolute;
+	 
+		 padding-bottom:40px;
+		float:left;
+		
+	}
+	
+	
+	
+	
+	.nav ul li{
+		width: 100%;
+		float: none;
+		
+		
+		
+	}
+	.nav ul li a{
+		width: 55%;
+		display: inline-block;
+		position:relative;
+		float:left;
+		 height:45px;
+		 
+	}
+	 .nav ul li ul{
+	
+		position: static;
+		display:none;
+	}
+	.nav ul li ul li a{
+		background: #222;
+	}
+		.active{
+display:block;
+
+}
+	
+	
+	
+	
+	#menou{
+
+width:100%;
+
+
+}  
+  
+ #tag #pok{
+
+//border:1px solid yellow;
+overflow:hidden;
+
+float:left;
+margin:0 10px;
+padding:0;
+
+}
+
+
+
+#tag p{
+
+float:left;
+font-size:16px;
+margin:15 0px;
+color:#ccc;
+}
+
+
+
+ #tag ul{
+	 /border:1px solid red;
+	 //position:absolute;
+	 //top:50%;
+	 //left:50%;
+	 //transform:translate(-50%,-50%);
+	margin:16 5px;
+	padding:0;
+	 display:flex;
+	 width:160px;
+  float:left;
+	 }
+	 
+	#tag ul li{
+	 
+	 list-style:none;
+	 color:#484848;
+	 font-family:arial;
+	 font-size: 15px ;
+
+	 letter-spacing:3px;
+	
+	 animation:animate 1.8s linear infinite;
+	 
+	 
+	 }
+
+#clock{
+width:47%;
+//border:1px solid red;
+text-align:center;
+margin:15px 270px;
+color:#ccc;
+font-size:15px;
+position:absolute;
+
+} 
+  
+
+
+
+	#upomenu1{
+//border:1px solid yellow;
+width:100%;
+height:auto;
+
+clear:both;
+//background:#ccc;
+//position:absolute;
+}
+
+
+.slideshow{
+ height:240px;
+ width:72%;
+ margin:0px 70px;
+
+//border:1px solid red;
+position:absolute;
+
+
+}
+
+.slideshow img {
+width:100%;
+height:240px;
+margin:0px auto;
+position:relative;
+
+}
+
+#clear2{
+margin:10px 0;
+overflow:hidden;
+clear:both;
+//border:1px solid pink;
+}
+
+
+#words{
+
+position:relative;
+padding:8px 0px;
+margin:240px 240px;
+width:100%;
+margin-bottom:0;
+}
+
+
+
+
+
+
+
+
+#upomenu2{
+overflow:hidden;
+//background:grey;
+//width:100%;
+margin:400px 0;
+height:1150px;
+padding:0;
+margin-bottom:0;
+margin-top:0;
+}
+
+
+.upo2ab{
+overflow:hidden;
+width:98%;
+height:950px;
+//border:1px solid orange;
+position:absolute;
+padding:0;
+
+}
+
+
+#upomenu2a{
+
+//background:#396F8B;
+width:32%;
+border:1px solid black;
+
+
+margin:35px 6px;
+background-image:url('images/sky5.jpg');
+position:absolute;
+}
+
+#upomenu2a p{
+background:#ccc;
+width:70%;
+text-align:center;
+border-radius:10px 10px;
+margin:0px auto;
+font-size:20px;
+
+
+}
+
+
+#upomenu2a ul{
+list-style:circle;
+
+float:left;
+width:100%;
+margin:0;
+padding:0;
+}
+
+
+#upomenu2a ul li{
+
+color:white;
+margin:6px 20px;
+width:100%;
+padding:0;
+font-size:16px;
+}
+
+#upomenu2a ul li a{
+text-decoration:none;
+color:#ccc;
+
+padding:0;
+margin:0;
+width:50%;
+}
+
+#upomenu2a ul li a:hover{
+text-decoration:underline;
+color:#C9D322; //color:#188BC0;
+
+}
+
+.clear{
+clear:both;
+//border:1px solid green;
+overflow:hidden;
+}
+
+#upomenu2b{
+margin:0px 250px;
+padding:0px 0;
+border:1px solid black;
+overflow:hidden;
+float:none;
+width:55%;
+//background:#396F8B;
+border-radius:10px 10px;
+background-image:url('images/sky5.jpg');
+position:absolute;
+
+}
+
+
+#upomenu2b #prosfores {
+background:#ccc;
+padding:10px 0;
+margin:10 auto ;
+width:45%;
+text-decoration:underline;
+text-align:center;
+border-radius:10px 10px;
+
+}
+
+
+#foto{
+border:1px solid black;
+width:80%;
+float:left;
+margin:15px 15px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:44%;
+
+
+}
+
+
+
+
+
+#foto1{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto1 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto1 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+
+
+#foto2{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto2 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto2 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+
+#foto3{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto3 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto3 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+
+
+#foto4{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto4 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto4 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+#foto5{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto5 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto5 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+
+
+#foto6{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto6 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto6 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+
+#foto7{
+border:1px solid black;
+width:80%;
+float:left;
+margin:5px 15px;
+background:#ccc;
+border-radius:6px 6px;
+
+}
+
+#foto7 img{
+width:40%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto7 p{
+text-align:center;
+margin:10px 0;
+width:44%;
+float:left;
+
+}
+
+#upomenu2b b{
+color:red;
+
+}
+
+
+
+#upomenu2c{
+background-image:url('images/sky5.jpg');
+border:1px solid black;
+font-size:16px;
+margin:940px 6px;
+font-family:arial;
+width:96%;
+border-radius:6px 10px;
+//background:#396F8B;
+position:absolute;
+}
+
+
+#upomenu2c p{
+
+color:#ccc;
+margin:10px 10px;
+
+}
+
+#upomenu2c b{
+
+color:#F8CC00;
+}
+
+
+footer{
+width:100%;
+position:absolute;
+background:#191818;
+height:80px;
+//border:1px solid white;
+margin:10px 0px;
+
+}
+
+footer p{
+margin:10px 0px;
+
+top:25px;
+width:100%;
+text-decoration:underline;
+text-align:center;
+font-size:18px;
+color:yellow;
+}
+
+
+
+
+
+
+
+
+  
+  
+
+
+}
+
+
+
+
+@media screen and (max-width:480px){
+
+
+
+  header{
+//background-image:url('images/ok2.jpg');
+
+height:110px;
+
+width:100%;
+
+
+}
+
+
+
+
+#ok{
+//background-image:url('images/ok.png');
+margin:0 80px;
+width:95%;
+}
+
+
+
+#ok a img{
+float:left;
+width:20%;
+margin:0;
+padding:0;
+}
+
+#ok a:hover img{
+opacity:0.7;
+
+}
+
+
+#fb{
+
+float:left;
+
+position:absolute;
+left:160px;
+
+width:9%;
+}
+
+#fb  img{
+
+float:left;
+height:30px;
+
+width:90%;
+}
+
+
+#fb :hover img{
+opacity:0.6;
+
+}
+
+#you{
+margin:10px 0px;
+float:left;
+padding:0;
+width:9%;
+position:absolute;
+left:310px;
+}
+
+#you img{
+height:30px;
+width:80%;
+}
+
+
+	
+	
+
+header{
+		width: 80%;
+	}
+	.nav{
+		display: none;
+		width: 50%;
+		height: 225px;
+		margin:0 ;
+		//position:absolute;
+	   
+		 padding-bottom:40px;
+		float:left;
+		
+	}
+	
+	
+	
+	
+	.nav ul li{
+		width: 100%;
+		float: none;
+		
+		
+		
+	}
+	.nav ul li a{
+		width: 55%;
+		display: inline-block;
+		position:relative;
+		float:left;
+		 height:45px;
+		 
+	}
+	 .nav ul li ul{
+	
+		position: static;
+		display:none;
+	}
+	.nav ul li ul li a{
+		background: #222;
+	}
+		.active{
+display:block;
+
+}
+	
+	
+	
+	
+	#menou{
+
+width:100%;
+}
+
+
+
+
+ #tag #pok{
+
+//border:1px solid yellow;
+overflow:hidden;
+width:170px;
+float:left;
+margin:0 10px;
+padding:0;
+
+
+}
+
+
+
+#tag p{
+/border:1px solid red;
+float:left;
+font-size:16px;
+margin:15 0px;
+margin-bottom:0;
+color:#ccc;
+}
+
+
+
+ #tag ul{
+	 /border:1px solid red;
+	 //position:absolute;
+	 //top:50%;
+	 //left:50%;
+	 //transform:translate(-50%,-50%);
+	margin:5 5px;
+
+	padding:0;
+	 display:flex;
+	 width:160px;
+  float:left;
+ 
+	 }
+	 
+	#tag ul li{
+	 
+	 list-style:none;
+	 color:#484848;
+	 font-family:arial;
+	 font-size: 15px ;
+     margin: 0;
+	 padding:0;
+	 letter-spacing:3px;
+	
+	 animation:animate 1.8s linear infinite;
+	 
+	 
+	 }
+
+#clock{
+width:48%;
+//border:1px solid red;
+text-align:center;
+margin:15px 170px;
+color:#ccc;
+font-size:15px;
+position:absolute;
+
+}
+
+	
+	#upomenu1{
+//border:1px solid yellow;
+width:100%;
+height:auto;
+
+clear:both;
+//background:#ccc;
+//position:absolute;
+}
+
+
+.slideshow{
+ height:230px;
+ width:94%;
+ margin:0px 10px;
+
+//border:1px solid red;
+position:absolute;
+
+
+}
+
+.slideshow img {
+width:100%;
+height:230px;
+margin:0px auto;
+position:relative;
+
+}
+
+#clear2{
+margin:10px 0;
+overflow:hidden;
+clear:both;
+//border:1px solid pink;
+}
+
+
+#words{
+
+position:relative;
+padding:8px 0px;
+margin:230px 170px;
+width:100%;
+margin-bottom:0;
+}
+
+
+
+
+
+
+
+
+#upomenu2{
+overflow:hidden;
+//background:grey;
+//width:100%;
+margin:400px 0;
+height:1150px;
+padding:0;
+margin-bottom:0;
+margin-top:0;
+}
+
+
+.upo2ab{
+overflow:hidden;
+width:98%;
+height:920px;
+//border:1px solid orange;
+position:absolute;
+padding:0;
+
+}
+
+
+#upomenu2a{
+
+//background:#396F8B;
+width:37%;
+border:1px solid black;
+
+
+margin:30px 6px;
+background-image:url('images/sky5.jpg');
+position:absolute;
+}
+
+#upomenu2a p{
+background:#ccc;
+width:72%;
+text-align:center;
+border-radius:10px 10px;
+margin:0px auto;
+font-size:20px;
+
+
+}
+
+
+#upomenu2a ul{
+list-style:circle;
+
+float:left;
+width:92%;
+margin:0;
+padding:0;
+}
+
+
+#upomenu2a ul li{
+
+color:white;
+margin:6px 20px;
+width:100%;
+padding:0;
+font-size:16px;
+}
+
+#upomenu2a ul li a{
+text-decoration:none;
+color:#ccc;
+
+padding:0;
+margin:0;
+width:50%;
+}
+
+#upomenu2a ul li a:hover{
+text-decoration:underline;
+color:#C9D322; //color:#188BC0;
+
+}
+
+.clear{
+clear:both;
+//border:1px solid green;
+overflow:hidden;
+}
+
+#upomenu2b{
+margin:0px 185px;
+padding:0px 0;
+border:1px solid black;
+overflow:hidden;
+float:none;
+width:50%;
+//background:#396F8B;
+border-radius:10px 10px;
+background-image:url('images/sky5.jpg');
+position:absolute;
+
+}
+
+
+#upomenu2b #prosfores {
+background:#ccc;
+padding:6px 0;
+margin:10px auto ;
+width:55%;
+text-decoration:underline;
+text-align:center;
+border-radius:10px 10px;
+
+}
+
+
+#foto{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+
+
+
+
+
+#foto1{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto1 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto1 p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+
+
+#foto2{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto2 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto2 p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+
+#foto3{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto3 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto3 p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+
+#foto4{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto4 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto4 p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+#foto5{
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto5 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto5 p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+
+
+#foto6{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto6 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto6 p{
+float:left;
+//border:1px solid green;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+
+#foto7{
+border:1px solid black;
+width:86%;
+float:left;
+margin:5px 10px;
+background:#ccc;
+border-radius:6px 6px;
+}
+
+#foto7 img{
+
+width:35%;
+border-radius:5px 5px;
+margin:4px 10px;
+float:left;
+}
+
+
+#foto7 p{
+float:left;
+text-align:center;
+margin:10px 0;
+width:40%;
+
+
+}
+#upomenu2b b{
+color:red;
+
+}
+
+
+
+#upomenu2c{
+background-image:url('images/sky5.jpg');
+border:1px solid black;
+font-size:16px;
+margin:915px 6px;
+font-family:arial;
+width:96%;
+border-radius:6px 10px;
+//background:#396F8B;
+position:absolute;
+}
+
+
+#upomenu2c p{
+
+color:#ccc;
+margin:10px 10px;
+
+}
+
+#upomenu2c b{
+
+color:#F8CC00;
+}
+
+
+footer{
+width:100%;
+position:absolute;
+background:#191818;
+height:80px;
+//border:1px solid white;
+margin:10px 0px;
+
+}
+
+footer p{
+margin:10px 0px;
+
+top:25px;
+width:100%;
+text-decoration:underline;
+text-align:center;
+font-size:18px;
+color:yellow;
+}
+
+	
+	
+	
+	
+	body{
+	width:100%
+		overflow-x:hidden;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+<div id="main">
+<header>
+  <div id="ok"> 
+ 
+ <a href="ΑΡΧΙΚΗ 8resp.html">
+ <img border="0" alt="" src="images/ok.png" width="300" height="90"> </a>
+
+
+  </div>
+ 
+ <div id="fb"> 
+ 
+ <a href="#">
+ <img border="0" alt="" src="images/fb.png" width="45" height="40"> </a>
+
+
+  </div> 
+  
+  <div id="you"> 
+ 
+ <a href="https://www.youtube.com/channel/UCarYD6WjjdXRqBZhPF9ppHQ/videos " target = "_blank">
+ <img border="0" alt="" src="images/you1.png" width="45" height="40"> </a>
+
+
+  </div>
+  
+  
+ 
+  
+ 
+  
+  
+</header>
+
+<div class="wrapper">
+   <div class="btn">
+     <div class="first"> </div>
+	 <div class="second"> </div>
+     <div class="third"> </div> 	 
+   </div>
+  </div>
+
+
+<nav class="nav">
+ <ul>
+<li><a href="ΑΡΧΙΚΗ 8resp.html">ΑΡΧΙΚΗ</a></li>
+<li><a href="#">ΕΓΚΑΤΑΣΤΑΣΕΙΣ</a>
+  <ul>
+ <li><a href="ΗΛΕΚΤΡΙΚΕΣ 8resp.html">ΗΛΕΚΤΡΙΚΕΣ</a></li>
+ <li><a href="ΦΩΤΟΒΟΛΤΑΪΚΑ 8resp.html">ΦΩΤΟΒΟΛΤΑΪΚΑ</a></li>
+
+ </ul>
+ </li>
+ <li><a href="ΑΝΑΚΑΙΝΗΣΕΙΣ 8resp.html">ΑΝΑΚΑΙΝΗΣΕΙΣ</a></li>
+  
+ 
+ 
+ 
+ <li><a href="ΒΛΑΒΕΣ2 8resp.html">ΒΛΑΒΕΣ</a></li>
+ 
+ <li><a href="ΕΠΙΚΟΙΝΩΝΙΑ 8resp.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+ 
+ 
+ 
+
+</nav>
+
+
+<div id="menou">
+
+<div id="tag">
+ 
+ <div id="pok">
+ <p> Καλώς ήρθατε στο
+ 
+ <ul>
+         <li>O</li>
+		 <li>K</li> 
+		 <li>E</li>
+		 <li>L</li>
+		 <li>E</li>
+		 <li>C</li>
+		 <li>T</li>
+		 <li>R</li>
+		 <li>I</li>
+		 <li>C</li>
+	
+    </ul> 
+ </p>
+ </div>
+ <div id="clock">
+<script type="text/javascript">window.onload = date_time('clock');</script>
+</div>
+ 
+ 
+ </div>
+
+
+ <div id ="upomenu1">
+	 
+	 
+	   <div class="slideshow">
+<img src=" images/im1.jpg" width="730" height="410">
+<img src=" images/im2.jpg" width="730" height="410" >
+<img src=" images/im3.jpg" width="730" height="410">
+<img src=" images/im4.jpg" width="730" height="410" >
+
+
+</div>
+
+
+
+<div id="words">
+ <a><img id="prev"   href="" src="images/ima.png" width="" height="" ></a>
+
+<a><img id="next"  href=""  src="images/imb.png"  width="" height=""></a>
+</div>
+
+
+
+   
+
+
+</div>
+
+<div id = "clear2"> </div>
+
+
+<div id="upomenu2">
+
+<div class="upo2ab">
+<div id="upomenu2a">
+ 
+ <p>Θέματα</p>
+
+<ul>
+
+<li><a href="#">Ανοιγμα συσκευών </br>με bluetooth</a></li>
+
+<li><a href="#">Αυτοματισμοί με</br>Arduino </a></li>
+
+<li><a href="#">Εξυπνο σπίτι </br>με arduino </a></li>
+<li><a href="#"> Σταδιακός </br>φωτισμός</a></li>
+
+<li><a href="#">Ελεγχος ρολών</br>κεντρκά-τοπικά</a></li>
+
+
+<li><a href="#">Ρελέ</a></li>
+<li><a href="#">Πρίζες</a></li>
+<li><a href="#">Διακόπτες</a></li>
+<li><a href="#">Εγκατάσταση </br>τηλεφώνου</a></li>
+</ul>
+</div>
+
+
+
+
+<div id="upomenu2b">
+
+ <div id="prosfores">ΠΡΟΣΦΟΡΕΣ</div>
+
+ <div id="foto">
+<img src="images/antist.jpg" height="80px" width="120px" a href="#" >
+
+<p>Αλλαγή αντίστασης θερμοσίφωνα<b></br>60ευρώ</b>
+
+</p>
+
+</div>
+
+<div id="foto1">
+<img src="images/diak.jpg" height="80px" width="120px"  >
+
+<p>Αλλαγή διακοπτών-πριζών<b></br>30ευρώ</b>
+
+</p>
+
+</div>
+
+<div id="foto2">
+<img src="images/lamp.jpg" height="80px" width="120px" >
+
+<p>Εγκατάσταση φωτιστικών<b></br>30ευρώ</b>
+
+</p>
+
+</div>
+
+<div id="foto3">
+<img src="images/rele.jpg" height="80px" width="120px" >
+
+<p>Τοποθέτηση ρελέ διαρροής<b></br>30ευρώ</b>
+
+</p>
+
+</div>
+
+
+<div id="foto4">
+<img src="images/pinakas.jpg" height="80px" width="120px" >
+
+<p>Αλλαγή ηλεκτρικού πίνακα<b></br>110ευρώ</b>
+
+</p>
+
+</div>
+
+
+<div id="foto5">
+<img src="images/kouz.jpg" height="80px" width="120px" >
+
+<p>Συνδεση ηλεκτρικής κουζίνας<b></br>30ευρώ</b>
+
+</p>
+
+</div>
+
+
+
+<div id="foto6">
+<img src="images/thl.jpg" height="80px" width="120px" >
+
+<p>Σύνδεση γραμμής τηλεφώνου <b></br>25ευρώ</b>
+
+</p>
+
+</div>
+
+
+<div id="foto7">
+<img src="images/apor.jpg" height="80px" width="120px" >
+
+<p>Εγκατάσταση απορροφητήρα<b></br>50ευρώ</b>
+
+</p>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+<div id="clear2">
+
+
+</div>
+
+<div id="upomenu2c">
+<p>Το <B>OK ELECTRIC</B>  είναι μια ιστοσελίδα που σας προσφέρει της καλύτερες υπηρεσίες στης καλύτερες τιμές!
+ Η εμπειρία μας  στον τομέα των ηλεκτρικών εγκαταστάσεων και γενικότερα στον τομέα της τεχνολογίας είναι ο καλύτερος 
+ σύμμαχος μας!Προτεραιότητα μας αποτελεί η ικανοποίηση του πελάτη!Είμαστε στην διάθεση σας για οποιαδήποτε πρόβλημα!</p>  
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="clear2"> </div>
+<footer>
+
+
+
+<p>designed and created by ody </p>  
+
+
+
+
+
+
+</footer>
+</div>
+
+
+    
+<script>
+ $(document).ready(function(){
+ $(".btn").click(function(){
+  $(this).toggleClass("active");
+  $(".nav").fadeToggle("slow"); //or slideToggle
+
+	
+  });
+ });
+ </script>
+
+
+</body>
+
+</html>
+
+
+
